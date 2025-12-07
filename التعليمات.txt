@@ -1,0 +1,12 @@
+git clone https://github.com/kulaib-develop/design_token_figma_plugin.git design_token_figma_plugin
+cd design_token_figma_plugin
+
+# تقوم بتثبيت Node js اذا ليست موجودة
+https://nodejs.org/dist/v18.16.1/node-v18.16.1-x64.msi
+
+#تثبيت ال yarn على الجهاز بعد تثبيت ال node
+npm install -g yarn
+
+yarn  --frozen-lockfile  --immutable
+yarn build
+Open `Figma` -> `Plugins` -> `Development` -> `Import plugin from manifest...` and select the `manifest.json` file from the `packages\tokens-studio-for-figma\manifest.json`
